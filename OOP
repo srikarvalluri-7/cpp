@@ -1,0 +1,72 @@
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     cout<<"Hello World";
+// }
+
+// Online C++ compiler to run C++ program online
+/*#include <iostream>
+using namespace std;
+class Student{
+    public:
+    int regno;
+    string name;
+    int rollno;
+    int age;
+    string mobile;
+void study(){
+    cout<<"Student "<<name<<" is Studying."<<endl;
+ }
+};
+int main(){
+    Student s1;
+    s1.regno=101;
+    s1.name="Srikar";
+    s1.rollno=20;
+    s1.mobile="1234567890";
+    s1.study();
+    return 0;
+}*/
+
+#include<iostream>
+#include<string>
+using namespace std;
+class student{
+    public:
+    int age, reg_num;
+    long int mob_num;
+    string name;
+    void details() {
+        cout<< "\nSTUDENT DETAILS:\n"
+        << "NAME: " << name << "\n"
+        << "AGE: " << age << "\n"
+        << "MOBILE NO: " << mob_num << "\n"
+        << "REG NO: " << reg_num << "\n";
+    }
+    private:
+    double marks;
+    public:
+    void setmarks(double m){
+        marks = m;
+    }
+    void displaymark(){
+        cout<<"Marks "<<marks<<"\n";
+    }
+}; 
+int main(){
+    student s1;
+    // Getting data for student s1
+    cout << "ENTER YOUR NAME: ";
+    getline(cin, s1.name);   
+    cout << "ENTER YOUR AGE, MOBILE_NUM, REG_NUM: ";
+    cin >> s1.age >> s1.mob_num >> s1.reg_num;  
+    // Calling the void function from the main function
+    s1.details();
+    double m;
+    cout<<"Enter Marks: ";
+    cin>>m;
+    s1.setmarks(m);
+    s1.displaymark();
+    cout<<"size of student object is:"<<sizeof(s1);
+    return 0;
+}
