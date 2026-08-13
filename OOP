@@ -70,3 +70,115 @@ int main(){
     cout<<"size of student object is:"<<sizeof(s1);
     return 0;
 }
+
+// extracting book details using struct and class.
+#include<iostream>
+#include<string>
+using namespace std;
+class book{
+    public:
+    string name, author;
+    float price;
+    void displaybookdetails() {
+        cout<<"BOOK DETAILS:\n"
+            << "NAME: " << name << "\n"
+            << "AUTHOR: " << author << "\n"
+            << "PRICE: " << price << "\n";
+    }
+struct bk{
+    string name, author;
+    float price;
+    void displaybookdetails() {
+        cout<<"BOOK DETAILS:\n"
+            << "NAME: " << name << "\n"
+            << "AUTHOR: " << author << "\n"
+            << "PRICE: " << price << "\n";
+    }
+};
+int main(){
+    bk b1;
+    cout << "ENTER BOOK NAME: ";
+    cin>>b1.name;
+    cout << "ENTER AUTHOR NAME: ";
+    cin>>b1.author;
+    cout << "ENTER PRICE: ";
+    cin>>b1.price;
+    b1.displaybookdetails();
+}
+
+
+// creating a class rectangle finding its perimeter and area using methods.
+#include <iostream>
+using namespace std;
+class Rectangle {
+public:
+    double length;
+    double breadth;
+
+    double area() {
+        return length * breadth;
+    }
+    double perimeter() {
+        return 2 * (length + breadth);
+    }
+};
+
+int main() {
+    double a,b;
+    cin>>a;
+    cin>>b;
+    Rectangle R;
+    R.length = a;
+    R.breadth = b;
+    cout << "Rectangle Dimensions: "<<a<<"x"<<b << endl;
+    cout << "Area: " << R.area() << endl;
+    cout << "Perimeter: " << R.perimeter() <<endl;
+
+    return 0;
+}
+
+// write a switch case to print day of the week based on the integer input (0-6) where 0 is monday and 6 is sunday. also use enum in switch case.
+#include <iostream>
+using namespace std;
+int main() {
+enum Day {
+    MONDAY,
+    TUESDAY,
+    WEDNESDAY,
+    THURSDAY,
+    FRIDAY,
+    SATURDAY,
+    SUNDAY
+};
+    int Day[7]{
+        0,1,2,3,4,5,6
+    };
+    int day;
+    cin >> day;
+    switch (day) {
+        case MONDAY:
+            cout << "Monday" << endl;
+            break;
+        case TUESDAY:
+            cout << "Tuesday" << endl;
+            break;
+        case WEDNESDAY:
+            cout << "Wednesday" << endl;
+            break;
+        case THURSDAY:
+            cout << "Thursday" << endl;
+            break;
+        case FRIDAY:
+            cout << "Friday" << endl;
+            break;
+        case SATURDAY:
+            cout << "Saturday" << endl;
+            break;
+        case SUNDAY:
+            cout << "Sunday" << endl;
+            break;
+        default:
+            cout << "Invalid input" << endl;
+            break;
+    }
+}
