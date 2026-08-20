@@ -183,3 +183,32 @@ enum Day {
     }
 }
 
+
+//basic class and objects example.
+#include<iostream>
+using namespace std;
+class rectangle{
+    private:
+    int length;
+    int breadth;
+    public:
+    void input(){
+        cin>>length;
+        cin>>breadth;
+    }
+    double area(){
+        return length*breadth;
+    }
+    double perimeter(){
+        return 2*(length + breadth);
+    }
+    double display(){
+        cout<<"Area="<<area()<<endl;
+        cout<<"Perimeter="<<perimeter()<<endl;
+    }
+};
+int main(){
+    rectangle rect;
+    rect.input();
+    rect.display();
+}
