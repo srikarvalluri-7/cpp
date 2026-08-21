@@ -212,3 +212,20 @@ int main(){
     rect.input();
     rect.display();
 }
+
+
+// Types of Manipulators
+// Non-parameterized: Do not take arguments (require ).
+// Parameterized: Take arguments to customize formatting (require ).
+// Common Non-Parameterized Manipulators
+// std::endl: Inserts a newline character and flushes the output
+// stream buffer.
+// std::hex / std::oct / std::dec: Changes the number base to hexadecimal,
+// octal, or decimal.
+// std::left / std::right: Aligns text output to the left or right.
+// Common Parameterized Manipulators ()
+// std::setw(int n): Sets the field width for the next output to exactly n
+// characters.
+// std::setfill(char c): Specifies the character to fill the
+// empty spaces created by setw.41 // std::setprecision(int n): Sets the total number of digits or
+// decimal places for floating-point numbers.
