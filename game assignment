@@ -1,0 +1,58 @@
+# Dungeon Quest — Build Your Own Adventure Game
+**Duration:** 2–3 Hours  
+**Language:** C++
+
+## Objective
+Build a console-based adventure game where the player explores a dungeon, collects items, fights enemies and tries to achieve the highest score.
+
+Your program must demonstrate both:
+
+**OOP**
+* Class & objects
+* Encapsulation
+* Constructors
+* Destructor
+* `this` pointer
+* Static data members/functions
+* Member functions
+* Friend function
+* Reference variables / passing objects by reference
+
+**DSA**
+* Arrays
+* Traversal
+* Searching
+* Sorting (optional)
+* Functions
+* Loops
+* Structures/enums where appropriate
+* Recursion (basic)
+* Time-complexity analysis
+
+---
+
+## 🎮 GAME STORY
+The player enters a dungeon containing:
+* 🗺️ Locations
+* 👾 Enemies
+* 💎 Treasures
+* ⚔️ Weapons
+* 🧪 Potions
+* 🔑 Keys
+
+**The objective is to:**
+Explore → Collect → Fight → Level Up → Find the Exit
+
+The player with the highest score wins.
+
+---
+
+## PART 1 — Design the Game Using Classes
+You must create at least 3 classes. A recommended design is:
+
+```text
+             Game
+               |
+      -------------------
+      |        |        |
+    Player   Enemy   Treasure
