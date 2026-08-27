@@ -519,3 +519,93 @@ int main(){
     cin>>n;
     cout<<recursion(n);
 }
+
+
+//calculating gcd using recursive function.
+#include <iostream>
+using namespace std;
+int gcd(int a, int b) {
+    if (b == 0)
+        return a;
+    return gcd(b, a % b);
+}
+int main() {
+    int num1, num2;
+    cout << "Enter two numbers: ";
+    cin >> num1 >> num2;
+
+    cout << "GCD of " << num1 << " and " << num2 << " is: " << gcd(num1, num2) << endl;
+
+    return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+class mystring{
+    public:
+    char str[100];
+    // constructor i)default and ii)parameterised
+    mystr(){
+        char str[100]=" ";
+    }
+    mystr(const char str[100]){
+        int i=0;
+        while(s[i]!='\0'){
+            str[i]=s[i];
+            i++;
+        }
+    }
+    int length(){
+        int count=0;
+        while(str[count]!='\0'){
+            count++;
+        }
+        return count;
+    }
+   char getchar(int n){
+    return str[n-1];
+   }
+   void change(int idx,char s){
+    
+   }
+   void copyFrom(const Mystring &other,int i=0){
+    int i=0;
+    while(other.str[i]!='\0'){
+        str[i]=other.str[i];
+        i++;
+    }
+   }
+   void append(const Mystring &other){
+        copyfrom(other,length());
+   }
+   int find(char ch){
+    for(int i=0;str[i]!='\0';i++){
+        if(str[i]==ch){
+            return i;
+        }
+    }
+   }
+   int compare(const Mystring &other){
+     int i=0;
+     while(str[i]!='\0' && other.str[i]!='\0'){
+        if(str[i]!=other.str[i]){
+        return str[i]-other.str[i];
+     }
+     i++;
+   }
+   return str[i]-other.str[i];
+}
+    void reverse(){
+        
+    }
+
+
+    // trim()
+    // split();
+
+
+}
+int main(){
+    
+}
