@@ -605,7 +605,53 @@ class mystring{
     // split();
 
 
-}
+#include<iostream>
+using namespace std;
+class Car{
+    public:
+    string model;
+    void start(){
+        cout<<"Car is starting"<<endl;
+    }
+};
 int main(){
+    int x=10;
+    int *p=&x;
+//dynamic object
+
+    Car c;
+    Car* cp=&c;
+    //how do we call this start in cp?
+    c.start();
+    (*cp).start();
+    cp->start();
+    return 0;
+}
+
+
+#include<iostream>
+#include <string>
+using namespace std;
+class Student{
+    public:
+    string name;
+    int marks;
+    Student(string name, int marks){
+        this->name=name;
+        this->marks=marks;
+    }
+    void display(){
+        cout<<"Name: "<<name<<endl;
+        cout<<"Marks: "<<marks<<endl;
+    }
+    
+};
+int main(){
+    Student stu[4]={Student("mani",85),Student("kumar",90),Student("raj",88),Student("priya",92)};
+    for(Student s:stu){
+        s.display();
+    }
     
 }
+
+
